@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>mystore</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+
+        .hero{
+            min-height: 400vh;
+            background-position: center;
+            background-size: cover;
+             background: transparent;
+             backdrop-filter: blur(30px);
+        }
+        
+
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            padding: 10px 0;
+            border-bottom: 2px solid white;      
+        }
+
+        .logo{
+            width: 120px;
+        }
+
+        nav ul{
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li{
+            margin: 0 20px;
+        }
+
+        nav ul li a{
+            font-size: 15px;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover{
+            color: white;
+            border-bottom: 2px solid white;
+        }
+
+        nav button{
+            padding: 12px 35px;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: .3s;
+            box-shadow: 0 0 10px white;
+            border-radius: 25px;
+        }
+
+        nav button:hover{
+            scale: .8;
+        }
+
+        .content{
+            position: absolute;
+            top: 6%;
+            left: 2%;
+            align-items: center;
+            text-align: center;
+            
+        }
+
+        .btns{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .content button{
+            margin-top: 50px;
+            padding: 12px 45px;
+            background: transparent;
+            border: none;
+            color: black; text-transform:uppercase;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: .3s;
+            box-shadow: 0 0 10px black;
+            border-radius: 25px;
+            margin: 13px;
+        }
+        .button-effect{
+            position: relative;
+            isolation: isolate;
+            overflow: hidden;
+            border: 2px solid darkblue;
+            padding: 50px 200px;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 15px;
+
+        }
+        .button-effect:before{
+            content: "";
+            position: absolute;
+            left: auto;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 0;
+            background-color: darkblue;
+            z-index: -1;
+            transition: 0.4s;
+            
+        }
+        .button-effect:hover:before{
+            left: 0;
+            right: auto;
+            width: 200px;   
+        }
+        .content button.know_more{
+            margin-left: 25px;
+        }
+
+        .content button:hover{
+            scale: .8;
+        }
+
+        .content button.know_more:hover{
+            background: transparent;
+            border: 2px solid transparent;
+            color: transparent;
+            scale: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav style="background-color: darkblue;">
+            <img src="image copy.png" class="logo">
+
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Product.html">Product</a></li>
+                <li><a href="About us.html">About Us</a></li>
+                <li><a href="Contact us.html">Contact Us</a></li>
+            </ul>
+
+            <button><a href="https://www.ralphlauren.com/search?q=polo&br=t&fq=division%3A%22Men%22%20OR%20%22Women%22%20OR%20%22Kids%20%26%20Baby%22%20OR%20%22Home%22" style="color: white;">More</a></button>
+        </nav>
+        <div class="content">
+    <table border-collaps="collaps" width="98%" align="center">
+        <tr align="center">
+            <td><a href="https://www.ralphlauren.com/men-clothing-polo-shirts/big-pony-20th-anniversary-crest-polo/100082398.html"> <img src="https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-AI711P03952001_lifestyle?$plpDeskRF$" alt="" width="80%"></a> <p style="color: black;">Big Pony 20th Anniversary Crest Polo <br>
+Big & Tall <br>
+$150.00
+</p></td>
+            <td> <a href="https://www.ralphlauren.com/women-clothing-polo-shirts/the-iconic-classic-fit-mesh-polo-shirt/530385.html?dwvar530385_colorname=Carmel%20Pink"> <img src="https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-1125700_lifestyle?$plpDeskRF$" alt="" width="80%"></a> <p style="color: black;">The Iconic Classic Fit Mesh Polo Shirt <br>
+Polo Ralph Lauren <br>
+$118.00</p></td>
+        
+            <td> <a href="https://www.ralphlauren.com/men-clothing-sweaters/cable-knit-cotton-polo-sweater-/650001.html?dwvar650001_colorname=Andover%20Cream"> <img src="https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-1488600_lifestyle?$plpDeskRF$" alt="" width="80%"></a> <p style="color: black;"> Cable-Knit Cotton Polo Sweater <br>
+Polo Ralph Lauren <br>
+$138.00
+</p></td></tr>
+<tr align="center">
+            <td> <a href="https://www.ralphlauren.com/women-clothing-polo-shirts/slim-fit-stretch-polo-shirt/527507.html?dwvar527507_colorname=Polo%20Black%2FWhite"> <img src="https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-1455316_lifestyle?$plpDeskRF$" alt="" width="80%"></a> <p style="color: black;"> Slim Fit Stretch Polo Shirt <br>
+Polo Ralph Lauren <br>
+$128.00</p></td>
+            <td> <a href="https://www.ralphlauren.com/men-clothing-sweaters/mesh-knit-cotton-quarter-zip-sweater/651913.html?dwvar651913_colorname=Navy%20Heather"> <img src="https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-1490429_lifestyle?$plpDeskRF$" alt="" width="80%"> </a><p style="color: black;"> Mesh-Knit Cotton Quarter-Zip Sweater <br>
+Polo Ralph Lauren <br>
+$145.00</p>
+            <td> <a href="https://www.ralphlauren.com/women-clothing-shirts-blouses/slim-fit-oxford-shirt/638591.html?dwvar638591_colorname=White"> <img src="https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-1474895_lifestyle?$plpDeskRF$" alt="" width="80%"></a> <p style="color: black;"> Slim Fit Oxford Shirt <br>
+Polo Ralph Lauren <br>
+$128.00</p> 
+        </td>
+        </tr> 
+          <tr align="center">
+            <td><a href="https://www.ralphlauren.com/men-clothing-t-shirts/jersey-crewneck-t-shirt/530946.html?dwvar530946_colorname=Old%20Royal"> <img src="https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-AI711671438172_lifestyle?$plpDeskRF$" alt="" width="80%"></a> <p style="color: black;">Jersey Crewneck T-Shirt <br>
+Big & Tall <br>
+$59.50
+
+</p></td>
+            <td> <a href="https://www.ralphlauren.com/customize-ways-stitch/womens-t-shirt/CYO0024.html"> <img src="https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-CYO0024_lifestyle?$plpDeskRF$" alt="" width="80%"></a> <p style="color: black;">Women's T-Shirt <br>
+$68.00</p></td>
+            <td> <a href="https://www.ralphlauren.com/men-clothing-t-shirts/classic-fit-jersey-graphic-t-shirt/100085359.html"> <img src="https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-AI710B14218001_lifestyle?$plpDeskRF$" alt="" width="80%"></a> <p style="color: black;"> Classic Fit Jersey Graphic T-Shirt
+<br>
+Polo Ralph Lauren
+$95.00
+</p></td></tr>
+<tr align="center">
+            <td > <a href="https://www.ralphlauren.com/women-clothing-t-shirts/polo-bear-cotton-jersey-tee/100058319.html?dwvar100058319_colorname=Dark%20Brown"> <img src="https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-AI211A96599001_lifestyle?$plpDeskRF$" alt="" width="80%"></a> <p style="color: black;"> Polo Bear Cotton Jersey Tee
+<br>
+Polo Ralph Lauren
+$128.00</p></td>
+            <td > <a href="https://www.ralphlauren.com/men-clothing-t-shirts/classic-fit-striped-jersey-t-shirt/100040535.html"> <img src="https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-AI710960660007_lifestyle?$plpDeskRF$" alt="" width="80%"> </a><p style="color: black;"> Classic Fit Striped Jersey T-Shirt
+<br>
+Polo Ralph Lauren
+$55.00</p></td>
+            <td> <a href="https://www.ralphlauren.com/women-clothing-t-shirts/relaxed-crop-fit-cotton-jersey-tee/100045090.html?dwvar100045090_colorname=Cobblestone%20Heather"> <img src="https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-AI211967106003_lifestyle?$plpDeskRF$" alt="" width="80%"></a> <p style="color: black;"> Relaxed Crop Fit Cotton Jersey Tee
+<br>
+Polo Ralph Lauren
+$98.00</p> 
+        </td>
+        </tr>
+ <tr align="center">
+            <td> <a href="https://www.ralphlauren.com/women-clothing-pants/stretch-cotton-beaton-pant/100069583.html?dwvar100069583_colorname=Olive"> <img src="https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-AI211A10723002_lifestyle?$plpDeskRF$" alt="" width="80%"></a> <p style="color: black;">Stretch-Cotton Beaton Pant <br>
+Polo Ralph Lauren <br>
+$298.00</p></td>
+            <td> <a href="https://www.ralphlauren.com/women-clothing-pants/double-faced-georgette-wide-leg-pant/647630.html?dwvar647630_colorname=Black"> <img src="https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-AI200908891003_lifestyle?$plpDeskRF$" alt="" width="80%"></a> <p style="color: black;"> Double-Faced Georgette Wide-Leg Pant <br>
+Polo Ralph Lauren <br>
+$175.00</p></td>  
+            <td> <a href="https://www.ralphlauren.com/women-clothing-pants/cotton-curved-tapered-drawstring-pant/100083275.html?dwvar100083275_colorname=Navy"> <img src="https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-AI211A93150002_lifestyle?$plpDeskRF$" alt="" width="80%"></a> <p style="color: black;"> Cotton Curved Tapered Drawstring Pant <br>
+Polo Ralph Lauren <br>
+$248.00
+        </td>
+        </tr>
+    </table>
+    
+            <div class="btns">
+                 <button class="button-effect">BUY NOW</button>
+                <button class="button-effect"><a href="Home.html" style="color: black;">HOME</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

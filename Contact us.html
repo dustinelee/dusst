@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>mystore</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            text-decoration: none;
+            list-style: none;
+            
+        }
+
+        .hero{
+            min-height: 100vh;
+            background: linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.69)),url("bgg.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            padding: 10px 0;
+            border-bottom: 2px solid white;
+        }
+
+        .logo{
+            width: 120px;
+        }
+
+        nav ul{
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li{
+            margin: 0 20px;
+        }
+
+        nav ul li a{
+            font-size: 15px;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover{
+            color: white;
+            border-bottom: 2px solid white;
+        }
+
+        nav button{
+            padding: 12px 35px;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: .3s;
+            box-shadow: 0 0 10px white;
+            border-radius: 25px;
+        }
+
+        nav button:hover{
+            scale: .8;
+        }
+
+        .content{
+            position: absolute;
+            top: 26%;
+            left: 22%;
+
+        }
+
+
+        .btns{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 230px;
+            
+            
+        }
+        
+
+        .content button{
+            margin-top: 50px;
+            padding: 12px 45px;
+            background: transparent;
+            border: none;
+            color: white; text-transform:uppercase;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: .3s;
+            box-shadow: 0 0 10px white;
+            border-radius: 25px;
+            margin: 13px;
+        }
+        .button-effect{
+            position: relative;
+            isolation: isolate;
+            overflow: hidden;
+            border: 2px solid darkblue;
+            padding: 50px 200px;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 15px;
+            left: 27px;
+            top: 10px;
+
+        }
+        .button-effect:before{
+            content: "";
+            position: absolute;
+            left: auto;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 0;
+            background-color: darkblue;
+            z-index: -1;
+            transition: 0.4s;
+        }
+        .button-effect:hover:before{
+            left: 0;
+            right: auto;
+            width: 200px;
+        }
+
+        .content button.know_more{
+            margin-left: 25px;
+        }
+
+        .content button:hover{
+            scale: .8;
+        }
+
+        .content button.know_more:hover{
+            background: transparent;
+            border: 2px solid transparent;
+            color: transparent;
+            scale: 1;
+        }
+      .login-form{
+    width: 190%;
+    padding: 20px;
+    background: transparent;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px white;
+    align-items: right;
+    left: 450px;
+   position: absolute;
+    height: 400px;
+    
+}
+.input-group{
+    position: relative;
+    margin-bottom: 15px;
+    margin: 20px;
+    
+
+    
+
+}
+.input-group.label{
+    position: absolute;
+    top: 116px;
+    left: 12px;
+    font-size: 12px;
+    color: white;
+    font-weight: 600;
+}
+.input-group.label{
+    width: 276px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: transparent;
+    border-radius: 10px;
+    outline: none;
+    
+}
+.box{
+    width:220px;
+    height: 100px;
+}
+ .typr{
+    margin-left: 215px;
+    margin-top: 140px;
+    color: white;
+ }
+ 
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="image copy.png" class="logo">
+
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Product.html">Product</a></li>
+                <li><a href="About us.html">About Us</a></li>
+                <li><a href="Contact us.html">Contact Us</a></li>
+            </ul>
+
+            <button>More</button>
+        </nav>
+        <h2 class="typr" style="font: rockwell;"><b style="color: darkblue;">I'D LIKE TO HERE FROM YOU!</b> <br>
+        <p style="font: italic;">If you have any inquiries or just want to <br>
+        say hi, please use the contact form!</p></h2>
+        <div class="content">
+            <form class="login-form">
+            <h3 style="color: white; text-align: center;"><b>CONTACT US</b></h3>
+               <div class="input-group">
+                <label style="color: white;">Gmail</label><br>
+                <input type="email" placeholder="Enter Email" required><br>
+               </div>
+               <div class="input-group">
+                <label style="color: white;">Password</label>
+                <input type="Password"  placeholder="Input Password" required>
+                </div>
+                <div class="input-group">
+                <label style="color: white;">Message</label><br>
+                    <textarea class="box"></textarea> <br>
+               </div>
+                <div class="input-group">
+                <button class="button-effect" style="color: white;"> SUBMIT</button>
+                </div>
+
+            </form>
+            <div class="btns">
+                <button class="button-effect"><a href="Home.html" style="color: white;">HOME</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
